@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #register {
+      display: block;
+}
+    #email2 {
+      display: none;
+}
+  </style>
+</head>
+<body>
+  <div id="register">
+  <h2>Password must be at least 8 characters long, have at least 1 special character (!, @, #, etc.) and at least 1 number.</h2>
+  <input type="text"id="email" placeholder="Enter your email" autocomplete="off">
+  <input type="password" id="psw1" placeholder="Enter in a password">
+  <input type="password" id="psw2" placeholder="Re-Enter your password">
+  <button id="submit">Create Account</button>
+  <p id="err"></p>
+    </div>
+  <div id="email2">
+    <h1 style="margin-bottom: 10px;" id="email3"></h1><br>
+    <p style="margin-bottom: 10px;">Entered incorrectly or different email address?</p>
+    <p>Enter it here!</p><br>
+    <input type="text" id="email4" placeholder="Enter in your new email" autocomplete="off">
+    <button id="re-submit">Fix Email</button>
+  </div>
+</body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/scripts/register.js"></script>
+</html>
